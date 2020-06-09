@@ -1,30 +1,26 @@
 ## Print Function
 
-Read an integer N.
+Read an integer *N*.
 
 Without using any string methods, try to print the following: 
-123...N
+*123...N*
 
 Note that "..." represents the values in between.
 
 ### Input Format
-
-The first line contains an integer N.
+The first line contains an integer *N*.
 
 ### Output Format
-
 Output the answer as explained in the task.
 
 ### Sample Input 0
-
 3
 
 ### Sample Output 0
-
 123
 
 ### Submitted Code
-```
+```python
 n = int(input())
     b = ''
     for i in range(1, (n+1)):
@@ -32,7 +28,8 @@ n = int(input())
 
     print(b)
 ```
-===============================
+
+
 ## Write a function
 We add a Leap Day on February 29, almost every four years. The leap day is an extra, or intercalary day and we add it to the shortest month of the year, February.
 In the Gregorian calendar three criteria must be taken into account to identify leap years:
@@ -66,7 +63,7 @@ False
 1990 is not a multiple of 4 hence it's not a leap year.
 
 ### Submitted Code
-```
+```python
 def is_divisible_four_and_hundred(year):
     year = str(year)
     dois_ultimos = year[(len(year) - 2):len(year)]
@@ -88,5 +85,39 @@ def is_leap(year):
         leap = True
 
     return leap
+```
 
+## Loops
+### Task
+
+Read an integer *N*. For all non-negative integers *i* < *N*, print *i<sup>2</sup>*. See the sample for details.
+
+### Input Format
+The first and only line contains the integer, *N*.
+
+### Constraints
+1 <= N <= 20
+
+### Output Format
+Print N lines, one corresponding to each *i*.
+
+### Sample Input 0
+5
+
+### Sample Output 0
+0
+1
+4
+9
+16
+
+### Submitted Code
+```python
+n = int(input())
+    i = 0
+
+if n > 0 and n <= 20:
+    while i < n:
+        print(i ** 2)
+        i = i + 1
 ```
