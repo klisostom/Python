@@ -105,11 +105,13 @@ Print N lines, one corresponding to each *i*.
 5
 
 ### Sample Output 0
+```python
 0
 1
 4
 9
 16
+```
 
 ### Submitted Code
 ```python
