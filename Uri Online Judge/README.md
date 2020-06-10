@@ -12,28 +12,23 @@ Imprima a saída conforme exemplo fornecido.
 
 Exemplo de Entrada | Exemplo de Saída
 ------------------ | ----------------
-```python
-400 
-``` | ```python
-1 ano(s)
-1 mes(es)
-5 dia(s)
-```
-```python
-800
-``` | ```python
-2 ano(s)
-2 mes(es)
-10 dia(s)
-```
-```python
-30
-``` | ```python
-0 ano(s)
-1 mes(es)
-0 dia(s)
-```
+            400    |```
+                1 ano(s)
+                1 mes(es)
+                5 dia(s)
+                ```
+            800 | ```python
+            2 ano(s)
+            2 mes(es)
+            10 dia(s)
+            ```
 
+            30 | ```python
+            0 ano(s)
+            1 mes(es)
+            0 dia(s)
+            ```
+### CÓDIGO FONTE
 ```python
 tempo_anos = int(input())
 anos = int(tempo_anos / 365)
