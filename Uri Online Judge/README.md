@@ -27,3 +27,27 @@ print("{} ano(s)".format(anos))
 print("{} mes(es)".format(meses))
 print("{} dia(s)".format(dias))
 ```
+
+## Conversão de Tempo
+Leia um valor inteiro, que é o tempo de duração em segundos de um determinado evento em uma fábrica, e informe-o expresso no formato horas:minutos:segundos.
+
+### Entrada
+O arquivo de entrada contém um valor inteiro **N**.
+
+### Saída
+Imprima o tempo lido no arquivo de entrada (segundos), convertido para horas:minutos:segundos, conforme exemplo fornecido.
+
+|Exemplo de Entrada | Exemplo de Saída|
+| :---         |     :---     |
+|556 | 0:9:16 |  
+|1   | 0:0:1  |  
+|140153 | 38:55:53 | 
+
+### Código Submetido
+tempo = int(input())
+
+horas = int((tempo / 3600))
+minutos = int(((tempo - (horas * 3600)) / 60))
+segundos = int((tempo % 60))
+
+print("{}:{}:{}".format(horas, minutos, segundos))
