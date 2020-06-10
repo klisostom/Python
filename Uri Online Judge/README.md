@@ -45,6 +45,7 @@ Imprima o tempo lido no arquivo de entrada (segundos), convertido para horas:min
 |140153 | 38:55:53 | 
 
 ### Código Submetido
+```python
 tempo = int(input())
 
 horas = int((tempo / 3600))
@@ -52,7 +53,7 @@ minutos = int(((tempo - (horas * 3600)) / 60))
 segundos = int((tempo % 60))
 
 print("{}:{}:{}".format(horas, minutos, segundos))
-
+```
 
 ## Cédulas
 Leia um valor inteiro. A seguir, calcule o menor número de notas possíveis (cédulas) no qual o valor pode ser decomposto. As notas consideradas são de 100, 50, 20, 10, 5, 2 e 1. A seguir mostre o valor lido e a relação de notas necessárias.
