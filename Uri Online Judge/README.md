@@ -16,7 +16,7 @@ Imprima a saída conforme exemplo fornecido.
 |800 | 2 ano(s)<br/>2 mes(es)<br/>10 dia(s) |         
 |30 | 0 ano(s)<br/>1 mes(es)<br/> 0 dia(s)|
             
-### CÓDIGO FONTE
+### Código Submetido
 ```python
 tempo_anos = int(input())
 anos = int(tempo_anos / 365)
