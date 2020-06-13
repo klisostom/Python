@@ -181,4 +181,36 @@ print("{} minutos".format(x))
 
 ## Distância Entre Dois Pontos
 Leia os quatro valores correspondentes aos eixos x e y de dois pontos quaisquer no plano, p1(x1,y1) e p2(x2,y2) e calcule a distância entre eles, mostrando 4 casas decimais após a vírgula, segundo a fórmula:
-$a \varphi$ 
+![](https://1.bp.blogspot.com/-PQIs7TBdEag/T3PH5meSa2I/AAAAAAAAABI/myd8tKtGCj0/w1200-h630-p-k-no-nu/formula+distancia+entre+dois+pontos.jpg)
+
+### Entrada
+O arquivo de entrada contém duas linhas de dados. A primeira linha contém dois valores de ponto flutuante: **x1 y1** e a segunda linha contém dois valores de ponto flutuante **x2 y2**.
+
+### Saída
+Calcule e imprima o valor da distância segundo a fórmula fornecida, com 4 casas após o ponto decimal.
+
+|Exemplo de Entrada | Exemplo de Saída|
+| :---         |     :---     |
+| 1.0 7.0<br/>5.0 9.0  | 4.4721 |
+| -2.5 0.4<br/>12.1 7.3  | 16.1484 |
+| 2.5 -0.4<br/>-12.2 7.0  | 16.4575 |
+
+### Código Submetido
+```python
+import math
+
+entrada1 = input()
+entrada2 = input()
+lista1 = entrada1.split()
+lista2 = entrada2.split()
+
+x1 = float(lista1[0])
+y1 = float(lista1[1])
+x2 = float(lista2[0])
+y2 = float(lista2[1])
+
+resultado = math.sqrt( ((x2 - x1) * (x2 - x1)) + ((y2 - y1) * (y2 - y1)) )
+print("{:.4f}".format(resultado))
+```
+
+
