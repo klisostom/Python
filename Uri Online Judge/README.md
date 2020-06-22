@@ -236,4 +236,32 @@ Y = float(input()) #gasosa
 print("{:.3f} km/l".format(X / Y))
 ```
 
+## O Maior
+Faça um programa que leia três valores e apresente o maior dos três valores lidos seguido da mensagem "eh o maior". Utilize a fórmula:
+![](https://resources.urionlinejudge.com.br/gallery/images/problems/UOJ_1013.png)
+Obs.: a fórmula apenas calcula o maior entre os dois primeiros (a e b). Um segundo passo, portanto é necessário para chegar no resultado esperado.
 
+### Entrada
+O arquivo de entrada contém três valores inteiros.
+
+### Saída
+Imprima o maior dos três valores seguido por um espaço e a mensagem "eh o maior".
+|Exemplo de Entrada | Exemplo de Saída|
+| :---         |     :---     |
+| 7 14 106  | 106 eh o maior |
+| 217 14 6  | 217 eh o maior |
+
+### Código Submetido
+```python
+entrada = input()
+lista = entrada.split()
+
+a = int(lista[0])
+b = int(lista[1])
+c = int(lista[2])
+
+temp = (a + b + abs(a - b)) / 2
+final = (temp + c + abs(temp - c)) / 2
+
+print("{} eh o maior".format(int(final)))
+```
