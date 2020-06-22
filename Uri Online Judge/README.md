@@ -239,6 +239,7 @@ print("{:.3f} km/l".format(X / Y))
 ## O Maior
 Faça um programa que leia três valores e apresente o maior dos três valores lidos seguido da mensagem "eh o maior". Utilize a fórmula:
 ![](https://resources.urionlinejudge.com.br/gallery/images/problems/UOJ_1013.png)
+
 Obs.: a fórmula apenas calcula o maior entre os dois primeiros (a e b). Um segundo passo, portanto é necessário para chegar no resultado esperado.
 
 ### Entrada
@@ -265,3 +266,6 @@ final = (temp + c + abs(temp - c)) / 2
 
 print("{} eh o maior".format(int(final)))
 ```
+
+
+
