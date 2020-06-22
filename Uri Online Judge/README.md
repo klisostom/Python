@@ -330,3 +330,38 @@ volume = (4 / 3) * pi * (raio * raio * raio)
 
 print("VOLUME = {:.3f}".format(volume))
 ```
+
+
+## Cálculo Simples
+Neste problema, deve-se ler o código de uma peça 1, o número de peças 1, o valor unitário de cada peça 1, o código de uma peça 2, o número de peças 2 e o valor unitário de cada peça 2. Após, calcule e mostre o valor a ser pago.
+
+### Entrada
+O arquivo de entrada contém duas linhas de dados. Em cada linha haverá 3 valores, respectivamente dois inteiros e um valor com 2 casas decimais.
+
+### Saída
+A saída deverá ser uma mensagem conforme o exemplo fornecido abaixo, lembrando de deixar um espaço após os dois pontos e um espaço após o "R$". O valor deverá ser apresentado com 2 casas após o ponto.
+
+|Exemplo de Entrada | Exemplo de Saída|
+| :---         |     :---     |
+| 12 1 5.30<br />16 2 5.10 | VALOR A PAGAR: R$ 15.50 |
+| 13 2 15.30<br />161 4 5.20 | VALOR A PAGAR: R$ 51.40 |
+| 1 1 15.10<br />2 1 15.10 | VALOR A PAGAR: R$ 30.20 |
+
+### Código Submetido
+```python
+linha1 = input()
+x1 = linha1.split()
+num1 = int(x1[1])
+valor1 = float(x1[2])
+
+
+linha2 = input()
+x2 = linha2.split()
+num2 = int(x2[1])
+valor2 = float(x2[2])
+
+print("VALOR A PAGAR: R$ {:.2f}".format( (valor1 * num1) + (valor2 * num2)))
+```
+
+
+
