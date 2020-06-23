@@ -1,4 +1,3 @@
-
 """
 Objetivo: Crie um jogo que levará o usuário a vários possíveis finais de acordo com as
 respostas que forem passadas para ele.
@@ -8,15 +7,15 @@ jogar = input("Você deseja jogar? Caso afirmativo, digite 'sim':\n")
 jogar = jogar.strip().lower()
 
 
-def aceitou_jogar(aceitou: str)-> bool:
+def aceitou_jogar(aceitou: str) -> bool:
     return aceitou == 'sim'
 
 
-def is_a(caracterer: str)->str:
+def is_a(caracterer: str) -> str:
     return caracterer == 'a'
 
 
-def a_continucao()->bool:
+def a_continucao() -> bool:
     resposta = input("""
     Você fica entusiasmado com a notícia. Afinal, estava esperando por isso há algum tempo.
     Decide se levantar e ir de encontro aquele homem. Chegando lá, você diz que aceita
@@ -37,7 +36,7 @@ def a_continucao()->bool:
     return False
 
 
-def a_continuacao_a1()->bool:
+def a_continuacao_a1() -> bool:
     print("""
     Você termina de beber aquela cerveja. E sai. Não esperou nem mesmo amanhecer!
     Afinal, se trata de uma princesa desaparecida e isso não pode esperar.
@@ -47,7 +46,7 @@ def a_continuacao_a1()->bool:
     return False
 
 
-def a_finished_b()->bool:
+def a_finished_b() -> bool:
     print("""
     Você decide não se arriscar e ignora o aviso daquele homem. Afinal, você
     está aí para se divertir e, quem sabe, conseguir uma noite com uma das garçonetes.
@@ -56,15 +55,15 @@ def a_finished_b()->bool:
     return False
 
 
-def is_b(caracterer: str)->bool:
+def is_b(caracterer: str) -> bool:
     return caracterer == 'b'
 
 
-def is_c(caracterer: str)->bool:
+def is_c(caracterer: str) -> bool:
     return caracterer == 'c'
 
 
-def b_continucao()->bool:
+def b_continucao() -> bool:
     resposta = input("""
     Você decide não se arriscar e ignora o aviso daquele homem. Afinal, você está aí
     para se divertir e, quem sabe, conseguir uma noite com uma das garçonetes!
