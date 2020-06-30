@@ -1,19 +1,24 @@
-from Algoritmos.linked_double_list import LinkedDoubleList
-from Algoritmos.node import Node
+import logging
 
-idade = 31
-idade2 = 43
-idade3 = 26
+from Algoritmos.ListasLigadas.linked_double_list import LinkedDoubleList
+from Algoritmos.Nodos.node import Node
 
-no1 = Node[int](idade)
-no2 = Node[int](idade2)
-no3 = Node[int](idade3)
 
-lista = LinkedDoubleList[int]()
-lista.list_insert(lista, no1)
-lista.list_insert(lista, no2)
-lista.list_insert(lista, no3)
+klisostom = 10
+deborah = 20
+gabi = 30
 
-print(
-    (lista.list_search(lista, no1.get_data())).get_data()
-)
+no_klisostom = Node(klisostom)
+no_deborah = Node(deborah)
+no_gabi = Node(gabi)
+
+lista = LinkedDoubleList()
+lista.list_insert(lista, no_klisostom)
+lista.list_insert(lista, no_deborah)
+lista.list_insert(lista, no_gabi)
+
+lista.show(lista)
+lista.list_delete(lista, no_klisostom)
+print()
+lista.show(lista)
+print(lista.list_search(lista, no_klisostom))
